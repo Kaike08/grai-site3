@@ -1,0 +1,88 @@
+
+/* Fonte padrão */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f3;
+  }
+  
+  /* Cores principais */
+  :root {
+    --cor-primaria: #1b4330; /* Verde escuro */
+    --cor-secundaria: #ffffff; /* Branco */
+    --cor-terciaria: #ffd60a; /* Amarelo */
+  }
+  
+  /* Aplicação de cores */
+  .bg-primaria {
+    background-color: var(--cor-primaria);
+  }
+  
+  .bg-secundaria {
+    background-color: var(--cor-secundaria);
+  }
+  
+  .text-primaria {
+    color: var(--cor-primaria);
+  }
+  
+  /* Botões personalizados */
+  .btn-primaria {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primaria:hover {
+    background-color: #14532d; /* Verde ainda mais escuro no hover */
+    transform: scale(1.05);
+  }
+  
+  .btn-secundaria {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secundaria:hover {
+    background-color: #e2e8f0; /* cinza leve */
+    transform: scale(1.05);
+  }
+  
+  /* Cards de funcionalidades */
+  .card {
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Animação ao carregar */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
